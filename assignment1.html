@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web Task</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+
+  <!-- JSQuery and JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="scripts/main.js"></script>
+
+  <!-- CSS and style libraries -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="styles/main.css" />
+  <link rel="stylesheet" type="text/css" href="styles/secondary.css" />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+    <div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <div class="dropdown">
+    <button class="dropbtn">Assignments
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Web Task</a>
+      <a href="assignment2.html">Video Task</a>
+      <a href="assignment3.html">Programming Task</a>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+    
+    $(window).scroll( function(){
+
+        $('.fade').each( function(i){
+            
+            var top_of_element = $(this).offset().top
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            if( bottom_of_window > top_of_element ){
+                
+                $(this).animate({'opacity':'1'},1000);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
+</script>
+</head>
+<body>
+	<div class="bg6">
+		<div class="caption2"><span class="border">The World Wide Web</span></div>
+	</div>
+
+	<div id="container" style="height: 2000px;">
+    <div class="fade" style="margin-right: 50px;">
+      <h1 style="margin-top: 50px;">How Does the Web Work?</h1>
+      <p style="margin-top: 60px; line-height: 30px;">The World Wide Web is a systen where information can be retrieved with devices with an internet connection. Web-connected computers are either clients or servers.</p>
+      <ul>
+  		<li>Clients are the user's internet connected device, and on it is a web browser. A web browser is a piece of application software which retrieves and displays information from a web server, such as Chrome or Firefox.</li>
+  		<li>Servers are a computer which stores information on websites, apps, etc. When the client sends a request, the browser will retrieve the information from the web server and display it for the client. </li>
+	</ul>
+	<p style="line-height: 30px;">However, there are many more components involved along the journey, such as an internet connection and internet protocols, which will be explained later. Here is a simplified diagram of the process:</p>
+	<img src="img/diagram.jpg">
+	</div>
+
+	<div class="fade" style="margin-right: 50px;">
+	    <h1>World Wide Web vs Internet</h1>
+      <p style="margin-top: 60px; line-height: 30px;">The terms "web" and "internet" are usually used interchangably, but they actually are two different things. The world wide web are the pages and websites you see on the client device, while the internet is the network of computers connected together, which is what the web operates on. This is also where information travels from between clients and servers.</p>
+  </div>
+
+	<div class="fade" style="margin-right: 50px;">
+      	<h1 style="margin-top: 30px;">The Intranet</h1>
+      <p style="margin-top: 60px; line-height: 30px;">An intranet is a local network of connected computers. It is just like the internet, just on a smaller scale and is usually restricted to members of the organisation. This allows for the organisation to build the intranet to be more specialised in their tasks, and would allow members to share, store and organise information more efficiently. The intranet can rely on the internet to work, but ones that do not require an internet connection can exist as well. Organisations can also allow users to access the internet through their own servers, which can block certain pages. An example of an intranet can be a school, as only students and staff at the school can access the information inside the computers.</p>
+    <img src="img/intranet.jpg" style="height: 333px;width: 635px;">
+	</div>
+
+	<div class="fade" style="margin-right: 50px;">
+      <h1>Internet Protocols</h1>
+      <p style="margin-top: 60px; line-height: 30px;">An internet protocol is a set of rules that tells how information should be delivered over the internet. Common protocols include:</p>
+      <ul>
+  		<li><span style="font-weight: bold;">Hypertext Transfer Protocol (HTTP)</span> - HTTP defines a language for clients and servers to communicate with each other. It communicates in individual messages rather than a constant stream of data.</li>
+  		<li><span style="font-weight: bold;">Internet Protocol Suite (TCP/IP)</span> - The Internet Protocol Suite's foundational protocols are the Transmission Control Protocol (TCP) and the Internet Protocol (IP). These protocols are used for communication, and connect devices across the internet. These define how information travel across the internet.</li>
+  		<li><span style="font-weight: bold;">File Transfer Protocol (FTP)</span> - FTP is a communication protocol that defines how files should travel between a server and client. It permits the downloading and uploading of files over the internet.</li>
+	</ul>
+	<p style="line-height: 30px;">Both HTTP and FTP rely TCP/IP, although HTML uses it more efficiently. HTTP is better at transferring smaller files, whereas FTP is more efficient at larger files. URL's using HTTP will start with HTTP, while FTP websites will start with FTP. Many more newer protocols have been introduced since the ones listed above, but are not internet standard.</p>
+    </div>
+
+    <footer>
+    <div class="fade" style="float: left; margin-top: 35px;">
+      <p>This website was created and powered by IanTech.</p>
+      <p><a href="https://bit.ly/329SnO0" target="_blank">©IanTech 2021. All rights reserved.</a></p>
+    </div>
+    <div class="fade" style="margin-left: 1155px">
+      <p style="font-weight: 300;">Links</p>
+      <p style="margin-top: 20px;"><a href="https://bit.ly/3mKhyA2" target="_blank">Documentation</a></p>
+      <p style="line-height: 10px;"><a href="https://hurlstone-h.schools.nsw.gov.au/" target="_blank">Hurlstone Agricultural HS</a></p>
+    </div>
+    </div>
+    </footer>
+  </div>
+</div>
+</body>
+</html>

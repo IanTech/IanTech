@@ -1,0 +1,136 @@
+body, html {
+  height: 100%;
+  min-height: 100%;
+}
+
+.bg1, .bg2, .bg3, .bg4, .bg5, .bg6 {
+  /* Parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg1 {
+    /* Height */
+  min-height: 100%;
+  width: 100%;
+
+  left: 0;
+    /* Image */
+  background-image: url(../img/trophy.jpg);
+}
+
+.bg2 {
+  min-height: 500px;
+  background-image: url(../img/office.jfif);
+}
+
+.bg3 {
+  min-height: 500px;
+  background-image: url(../img/lab.jpg);
+}
+
+.bg4 {
+  min-height: 100%;
+  background-image: url(../img/medal.jpg);
+}
+
+.bg5 {
+  min-height: 500px;
+  background-image: url(../img/nature.gif);
+}
+
+.bg6 {
+  min-height: 100%;
+  background-image: url(../img/www.jpg);
+}
+
+.caption span.border {
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+    padding: 18px;
+    margin-left: 700px;
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 30px;
+    letter-spacing: 8px;
+}
+
+.caption1 span.border {
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+    padding: 18px;
+    margin-right: 700px;
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 30px;
+    letter-spacing: 8px;
+}
+
+.caption2 span.border {
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+    padding: 18px;
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 30px;
+    letter-spacing: 8px;
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.caption1 {
+    position: absolute;
+    left: 0;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.caption2 {
+    position: absolute;
+    left: 0;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.abutton {
+  background-color: black;
+  border: 2px solid black;
+  color: white;
+  padding: 30px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  transition-duration: 0.4s;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.abutton:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: white;
+  color: black;
+}
+
+#fun::before {
+  content: "have fun";
+  animation: fun infinite 6s;
+}
+  
+@keyframes fun {
+  0% {content: "have fun"; color: black; font-weight: normal;}
+  49.99% {content: "have fun"; color: black; font-weight: normal;}
+  50% {content: "LEARN"; color: red; font-weight: bolder;}
+  60% {content: "have fun"; color: black; font-weight: normal;}
+  100% {content: "have fun"; color: black; font-weight: normal;}
+}
